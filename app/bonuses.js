@@ -3,6 +3,7 @@ let str = "team number 2"
 
 function camelCase(str) {
   let split = str.split(" ");
+  let split2 = '';
   let camel = '';
   for (let i = 0; i < split.length; i++) {
     split2 = split[i];
