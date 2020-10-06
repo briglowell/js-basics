@@ -2,12 +2,12 @@
 let str = "team number 2"
 
 function camelCase(str) {
-  let split = str.split(" ");
-  let split2 = '';
+  let stringArray = str.split(" ");
+  let token = '';
   let camel = '';
-  for (let i = 0; i < split.length; i++) {
-    split2 = split[i];
-    camel += (split2.charAt(0).toUpperCase() + split2.slice(1));
+  for (let i = 0; i < stringArray.length; i++) {
+    token = stringArray[i];
+    camel += (token.charAt(0).toUpperCase() + token.slice(1));
   }
   return camel.charAt(0).toLowerCase() + camel.slice(1);
 
